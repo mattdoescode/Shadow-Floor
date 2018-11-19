@@ -91,10 +91,7 @@ void loop() {
   }
 
   Serial.println(sendIt);
-      
-      
-
-
+ 
     /*
      * Dubugging: 
      * 
