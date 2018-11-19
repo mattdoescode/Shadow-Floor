@@ -50,5 +50,5 @@ void draw()
       }
     }
   }
-  frameRate(500);
+  frameRate(200);
 }
