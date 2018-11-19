@@ -111,7 +111,5 @@ void loop() {
  * Give a little room 
  * and pause for next reading, this allows for more accurate readings
  */
-   
-   Serial.println();
-   delay(3000);
+   delay(10);
 }
