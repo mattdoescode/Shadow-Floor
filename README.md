@@ -1,6 +1,8 @@
 # Shadow Floor
 </br></br>
 Written for the Bangor Children's Museum 
+</br>
+Users dance and move around a floor. Based on their positing they cast shadows these shadows are caught by photo-resistors and in turn respond with musical sounds. 
 </br></br>
 Code for a floor that reacts to shadows with musical sounds. Users can dance around on the floor and in turn create music.
 </br> </br>
