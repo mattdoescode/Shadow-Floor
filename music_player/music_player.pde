@@ -1,11 +1,12 @@
 // Matthew Loewen
-// This code gets values sent from arduino 
-// currently we skip things such as hand shaking
+// This code gets values sent from arduino via serial line
+// depending on the value read from serial play sounds
 // Audio from: https://www.partnersinrhyme.com
 
 import processing.serial.*;
 import ddf.minim.*;
 
+//way of handling sounds
 Minim minim;
 AudioPlayer[] player = new AudioPlayer[10];
 
@@ -35,8 +36,10 @@ void draw()
   {  // If data is available
     val = myPort.readStringUntil('\n');
   } 
+  //parse serial string and play sounds if a 1 is read
+  //sometimes we don't get a string too long or too short
   if (val != null) {
-    println("ength is: " + val.length());
+    println("length is: " + val.length());
     print(val);
     val = val.trim();
     for (int i = 0; (i < val.length() && val.length() <= 10); i++) {
